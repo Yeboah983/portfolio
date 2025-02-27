@@ -12,35 +12,30 @@
   </head>
   <body>
     <section class="navbar">
-      <span>Professional summary</span>
-      <span>Skills showcase</span>
-      <span>Experience</span>
-      <span>Project gallery</span>
-      <span>Contact information</span>
+      <a href="#professional-summary"><span>Professional summary</span></a>
+     <a href="#skills-section"><span>Skills showcase</span></a>
+      <a href="#experience"><span>Experience</span></a>
+      <a href="#portfolio"><span>Project gallery</span></a>
+      <a href="#contact"><span>Contact information</span></a>
       <span>Resume</span>
     </section>
 
     <section class="hero">
-      <h1>Hi!</h1>
+      <div class="hero-text">
+        <h1>Hi!</h1>
       <h1>I'm Alberta</h1>
       <p>I am a Junior Web Developer</p>
       <button>
         Download CV <i class="fa fa-download" aria-hidden="true"></i>
       </button>
+      </div>
     </section>
 
-    <section class="about">
+    <section id="professional-summary" class="about">
       <div class="about-me">
         <h2>ABOUT</h2>
         <p>
-          Hi I'm Jackson Ford On her way she met a copy. The copy warned the
-          Little Blind Text, that where it came from it would have been
-          rewritten a thousand times and everything that was left from its
-          origin would be the word "and" and the Little Blind Text should turn
-          around and return to its own, safe country. Even the all-powerful
-          Pointing has no control about the blind texts it is an almost
-          unorthographic life One day however a small line of blind text by the
-          name of Lorem Ipsum decided to leave for the far World of Grammar.
+          I am a versatile professional with a Bachelor of Science in Textile Design and Technology, blending creativity with technical expertise. With experience in Information Technology and web development, I possess strong analytical and problem-solving skills. My passion for cosmetology has further enhanced my artistic and hands-on abilities. I am eager to leverage my diverse skill set to contribute to dynamic projects, integrating design knowledge, IT proficiency, and web development expertise to create innovative solutions across various industries.
         </p>
       </div>
 
@@ -52,13 +47,9 @@
         <i class="fa fa-rocket" aria-hidden="true"><p>Web Development</p></i>
         <i class="fa fa-mobile" aria-hidden="true"><p>Application</p></i>
       </div>
-      <div class="sucess">
-        <h3>I am happy to know you that 300+ projects done sucessfully!</h3>
-        <button>hire me</button>
-      </div>
     </section>
 
-    <section class="skills-section">
+    <section id="skills-section" class="skills-section">
       <h5 class="specialty">MY SPECIALTY</h5>
       <h2 class="title">MY SKILLS</h2>
       <p class="description">
@@ -108,6 +99,7 @@
         <div class="progress-bar"><div class="progress seo"></div></div>
       </div>
     </section>
+
     <section id="experience" class="experience">
       <div class="section-heading">
           <h2>Experience</h2>
@@ -150,5 +142,97 @@
           </div>
       </div>
   </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-details">
+      <div class="section-heading text-center">
+        <h2>Project Gallery</h2>
+      </div>
+      <div class="container">
+        <div class="portfolio-content">
+          <div class="isotope">
+            <div class="row">
+
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="./images/p1.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      ui/ux design
+                    </a>
+                  </div><!-- /.isotope-overlay -->
+                </div><!-- /.item -->
+                <div class="item">
+                  <img src="./images/p2.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      ui/ux design
+                    </a>
+                  </div><!-- /.isotope-overlay -->
+                </div><!-- /.item -->
+              </div><!-- /.col -->
+
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="./images/p3.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web design
+                    </a>
+                  </div><!-- /.isotope-overlay -->
+                </div><!-- /.item -->
+              </div><!-- /.col -->
+
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="./images/p4.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web development
+                    </a>
+                  </div><!-- /.isotope-overlay -->
+                </div><!-- /.item -->
+                <div class="item">
+                  <img src="./images/p5.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web development
+                    </a>
+                  </div><!-- /.isotope-overlay -->
+                </div><!-- /.item -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!--/.isotope-->
+        </div><!--/.gallery-content-->
+      </div><!--/.container-->
+    </div><!--/.portfolio-details-->
+
+  </section>
+
+    <section id="contact" class="contact">
+        <div class="section-heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Name*" name="name" required>
+                    <input type="email" placeholder="Email*" name="email" required>
+                    <input type="text" placeholder="Subject" name="subject">
+                    <textarea placeholder="Message" rows="6" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Alberta Frimpomaah Yeboah</h3>
+                <p>Web Developer</p>
+                <p><strong>Phone:</strong> 233-552-411-716</p>
+                <p><strong>Email:</strong> yalberta03@gmail.com</p>
+                <p><strong>Website:</strong> www.alberta.com</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/animation.js"></script>
   </body>
 </html>
