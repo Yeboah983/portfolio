@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <section class="navbar">
@@ -63,7 +64,6 @@
     </section>
 
     <section id="skills-section" class="skills-section">
-      <h5 class="specialty">MY SPECIALTY</h5>
       <h2 class="title">MY SKILLS</h2>
       <p class="description">
         I possess a strong foundation in design, data management, and web development, with expertise in the following tools and technologies:
@@ -146,77 +146,45 @@
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio py-20 bg-gray-100">
       <div class="portfolio-details">
-        <div class="section-heading text-center">
-          <h2>Project Gallery</h2>
+        <div class="section-heading text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Project Gallery</h2>
+          <p class="text-gray-600 mt-2">Explore some of my recent work</p>
         </div>
-        <div class="container">
-          <div class="portfolio-content">
-            <div class="isotope">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="item">
-                    <img src="./images/p1.jpg" alt="portfolio image" />
-                    <div class="isotope-overlay">
-                      <a href="#"> ui/ux design </a>
-                    </div>
-                    <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                  <div class="item">
-                    <img src="./images/web.png" alt="portfolio image" />
-                    <div class="isotope-overlay">
-                      <a href="#"> ui/ux design </a>
-                    </div>
-                    <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-
-                <div class="col-sm-4">
-                  <div class="item">
-                    <img src="./images/p3.jpg" alt="portfolio image" />
-                    <div class="isotope-overlay">
-                      <a href="#"> web design </a>
-                    </div>
-                    <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
-
-                <div class="col-sm-4">
-                  <div class="item">
-                    <img src="./images/Screenshot 2025-02-27 102644.png" alt="portfolio image" />
-                    <div class="isotope-overlay">
-                      <a href="#"> web development </a>
-                    </div>
-                    <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                  <div class="item">
-                    <img src="./images/p5.jpg" alt="portfolio image" />
-                    <div class="isotope-overlay">
-                      <a href="#"> web development </a>
-                    </div>
-                    <!-- /.isotope-overlay -->
-                  </div>
-                  <!-- /.item -->
-                </div>
-                <!-- /.col -->
+    
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- First Row - Two Images Side by Side -->
+            <div class="item relative group overflow-hidden rounded-xl shadow-xl">
+              <img src="./images/Screenshot 2025-05-01 000254.png" alt="Mental Health Project" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
+              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <a href="https://aya-health.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">Mental Health</a>
               </div>
-              <!-- /.row -->
             </div>
-            <!--/.isotope-->
+    
+            <div class="item relative group overflow-hidden rounded-xl shadow-xl">
+              <img src="./images/Screenshot 2025-04-30 235538.png" alt="E-commerce Project" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
+              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <a href="https://crownmekk.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">E-commerce</a>
+              </div>
+            </div>
           </div>
-          <!--/.gallery-content-->
+    
+          <!-- Second Row - Single Centered Image -->
+          <div class="mt-10 flex justify-center">
+            <div class="item relative group overflow-hidden rounded-xl shadow-xl w-full md:w-1/2">
+              <img src="./images/Screenshot 2025-02-27 102644.png" alt="Web Development" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
+              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <a href="#" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">Web Development</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--/.container-->
       </div>
-      <!--/.portfolio-details-->
     </section>
+    
+    
 
     <section id="contact" class="contact">
       <div class="section-heading">
@@ -236,13 +204,6 @@
             ></textarea>
             <button type="submit">Submit</button>
           </form>
-        </div>
-        <div class="contact-info">
-          <h3>Alberta Frimpomaah Yeboah</h3>
-          <p>Web Developer</p>
-          <p><strong>Phone:</strong> 233-552-411-716</p>
-          <p><strong>Email:</strong> yalberta03@gmail.com</p>
-          <p><strong>Website:</strong> www.alberta.com</p>
         </div>
       </div>
     </section>
