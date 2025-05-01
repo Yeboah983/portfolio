@@ -106,6 +106,7 @@
 
 .about-me h2 {
   font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 50px;
 }
 
@@ -356,84 +357,6 @@
   padding-top: 50px;
 }
 
-/* Bootstrap-based grid layout for images: 3 on top, 2 below */
-.isotope .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.isotope .col-sm-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-}
-
-.isotope .col-sm-4:nth-child(2) {
-  justify-content: center;
-}
-
-.isotope .col-sm-4:nth-child(1),
-.isotope .col-sm-4:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Ensure equal image sizes */
-.isotope .item {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 300px;
-  margin: 10px 0;
-}
-
-.isotope .item img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s;
-}
-
-.isotope .item:hover img {
-  transform: scale(1.1);
-}
-
-/* Overlay effect */
-.isotope-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(31, 44, 108, 0.7);
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  justify-content: center;
-  flex-direction: row;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.isotope-overlay a {
-  display: inline-block;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-}
-
-.isotope .item:hover .isotope-overlay {
-  opacity: 1;
-}
-
 .contact {
   width: 60%;
   margin: 50px auto;
@@ -451,6 +374,7 @@
 .contact-content {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
 }
 
 .contact-form,
@@ -481,15 +405,6 @@
 
 .contact-form button:hover {
   background: gray;
-}
-
-.contact-info {
-  flex: 1.5; /* Makes the contact info take more space */
-  font-size: 1.5em; /* Increased font size */
-  line-height: 2; /* Increased line height for better spacing */
-  font-weight: bold; /* Makes it stand out */
-  align-items: center;
-  text-align: right;
 }
 
 /* Footer Styles */
