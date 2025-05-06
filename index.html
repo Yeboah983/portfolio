@@ -13,8 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
   </head>
   <body>
     <section class="navbar">
@@ -26,165 +32,436 @@
       <span>Resume</span>
     </section>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Hi!</h1>
-        <h1>I'm Alberta</h1>
-        <p>I am a Junior Web Developer</p>
-        <button>
-          Download CV <i class="fa fa-download" aria-hidden="true"></i>
-        </button>
-      </div>
-    </section>
+    <section
+      class="relative bg-cover bg-center h-screen"
+      style="background-image: url('./images/backend.jpg')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
-    <section id="professional-summary" class="about">
-      <div class="about-me">
-        <h2>ABOUT</h2>
-        <p>
-          I am a versatile professional with a Bachelor of Science in Textile
-          Design and Technology, blending creativity with technical expertise.
-          With experience in Information Technology and web development, I
-          possess strong analytical and problem-solving skills. My passion for
-          cosmetology has further enhanced my artistic and hands-on abilities. I
-          am eager to leverage my diverse skill set to contribute to dynamic
-          projects, integrating design knowledge, IT proficiency, and web
-          development expertise to create innovative solutions across various
-          industries.
-        </p>
-      </div>
+      <div
+        class="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between h-full"
+      >
+        <!-- Left content -->
+        <div class="max-w-xl text-center md:text-left p-10 mt-20">
+          <span
+            class="bg-teal-500 text-white px-4 py-2 rounded-full font-semibold inline-block mb-4"
+          >
+            Hello I'm
+          </span>
+          <h1 class="text-6xl font-bold text-white leading-tight mb-2">
+            Alberta Yeboah
+          </h1>
+          <p class="text-2xl font-medium text-white mb-6">
+            Junior Web Developer
+          </p>
 
-      <div class="icons">
-        <i class="fa fa-database" aria-hidden="true"><p>Data Analysis</p></i>
-        <i class="fa fa-lightbulb-o" aria-hidden="true"
-          ><p>Graphic design</p></i
+          <!-- Contact Info -->
+          <div class="space-y-2 text-xl font-medium text-gray-300 mb-6">
+            <p>
+              <i class="fas fa-envelope mr-2 text-teal-400"></i>
+              yalberta03@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-2 text-teal-400"></i> +233 552 411 716
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt mr-2 text-teal-400"></i> Accra,
+              Ghana
+            </p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex space-x-4 text-xl">
+            <a
+              href="https://facebook.com/yourprofile"
+              target="_blank"
+              class="hover:text-teal-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com/yourprofile"
+              target="_blank"
+              class="hover:text-teal-400"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://dribbble.com/yourprofile"
+              target="_blank"
+              class="hover:text-teal-400"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              class="hover:text-teal-400"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Profile image -->
+        <div
+          class="relative mt-12 transform -translate-x-2 md:mt-20 md:ml-4 md:translate-y-2 lg:translate-y-4 w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-8 border-gray-800 overflow-hidden shadow-2xl"
         >
-        <i class="fa fa-rocket" aria-hidden="true"><p>Web Development</p></i>
-        <i class="fa fa-mobile" aria-hidden="true"><p>Application</p></i>
-      </div>
-    </section>
-
-    <section id="skills-section" class="skills-section">
-      <h2 class="title">MY SKILLS</h2>
-      <p class="description">
-        I possess a strong foundation in design, data management, and web development, with expertise in the following tools and technologies:
-      </p>
-
-      <div class="skill">
-        <span>Adobe Photoshop</span>
-        <span class="percent">75%</span>
-        <div class="progress-bar">
-          <div class="progress photoshop"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <span>Microsoft Excel</span>
-        <span class="percent">85%</span>
-        <div class="progress-bar"><div class="progress html5"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Html</span>
-        <span class="percent">70%</span>
-        <div class="progress-bar">
-          <div class="progress wordpress"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <span>CSS</span>
-        <span class="percent">60%</span>
-        <div class="progress-bar"><div class="progress jquery"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>My SQL</span>
-        <span class="percent">70%</span>
-        <div class="progress-bar"><div class="progress html5"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Java</span>
-        <span class="percent">65%</span>
-        <div class="progress-bar"><div class="progress jquery"></div></div>
-      </div>
-    </section>
-   
-     <section id="experience" class="experience">
-      <div class="section-heading">
-        <h2>Experience</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h2>2025 - Present</h2>
-            <h3>Junior Web Developer</h3>
-            <p>Mest Africa, Accra,Ghana</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h2>2022 - 2023</h2>
-            <h3>Junior Data Analyst</h3>
-            <p>Ghana Tech Lab, Accra, Ghana</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h2>2021 - 2022</h2>
-            <h3>Textile and Visual art Analyst</h3>
-            <p>Centre for National Culture, Kumasi, Ghana</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h2>2017 - 2018</h2>
-            <h3>Digital Payment Operations</h3>
-            <p>Accra, Ghana</p>
-          </div>
+          <img
+            src="./images/background.jpg"
+            alt="Profile Image"
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio py-20 bg-gray-100">
-      <div class="portfolio-details">
-        <div class="section-heading text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-800">Project Gallery</h2>
-          <p class="text-gray-600 mt-2">Explore some of my recent work</p>
+    <section
+      class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-[#F3F4F6] text-white px-6 md:px-16 py-10 gap-10"
+    >
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          src="./images/ab-img.png"
+          alt="About Me Illustration"
+          class="w-[300px] md:w-[400px]"
+        />
+      </div>
+
+      <!-- Text Section -->
+      <div class="text-black w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="mb-6 leading-relaxed text-black font-semibold">
+          I'm a creative and tech-driven professional with a background in
+          Textile Design and Technology, IT support, and cosmetology—now focused
+          on web development. I bring a unique mix of design thinking and
+          hands-on skills to building responsive, user-focused digital
+          experiences.
+        </p>
+
+        <!-- Skill Tags -->
+        <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-6">
+          <span class="border border-teal-400 px-3 py-1 rounded-full text-sm"
+            >HTML</span
+          >
+          <span class="border border-teal-400 px-3 py-1 rounded-full text-sm"
+            >CSS</span
+          >
+          <span class="border border-teal-400 px-3 py-1 rounded-full text-sm"
+            >JavaScript</span
+          >
+          <span class="border border-teal-400 px-3 py-1 rounded-full text-sm"
+            >React</span
+          >
+          <span class="border border-teal-400 px-3 py-1 rounded-full text-sm"
+            >Firebase</span
+          >
+        </div>
+
+        <!-- Download CV Button -->
+        <a
+          href="your-cv-link.pdf"
+          download
+          class="inline-flex items-center bg-teal-500 hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-full transition"
+        >
+          Download CV
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 16l8 8 8-8M12 4v20"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="skills-section"
+      class="relative bg-[url('/images/home.jpg')] bg-cover bg-center bg-no-repeat text-white px-6 py-12"
+    >
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+
+      <!-- Content (layered above) -->
+      <div class="relative z-10 max-w-5xl mx-auto bg-opacity-70 p-8 rounded-xl">
+        <h2 class="text-3xl font-bold text-center mb-4">MY SKILLS</h2>
+        <p class="text-center text-gray-300 max-w-2xl mx-auto mb-10">
+          I possess a strong foundation in design, data management, and web
+          development, with expertise in the following tools and technologies:
+        </p>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+          <!-- Skills -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>Adobe Photoshop</span>
+              <span>75%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>Microsoft Excel</span>
+              <span>85%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>HTML</span>
+              <span>70%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>CSS</span>
+              <span>60%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>MySQL</span>
+              <span>70%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span>Java</span>
+              <span>65%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div
+                class="bg-teal-400 h-4 rounded-full"
+                style="width: 65%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="w-full bg-gray-100 py-12 px-4 sm:px-6 lg:px-8" x-data>
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-bold text-gray-800">Experience</h2>
         </div>
     
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- MEST Africa -->
+          <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-indigo-600" x-data="{ expanded: false }">
+            <h2 class="text-lg font-semibold text-indigo-600">Jan 2024 – Apr 2025</h2>
+            <h3 class="text-xl font-bold text-gray-800">Frontend Web Development Trainee</h3>
+            <p class="text-gray-600 italic">MEST Africa, Accra</p>
+            <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+              <li>Trained intensively in frontend web development with a focus on JavaScript, React, Tailwind CSS, HTML and GoogleSheets</li>
+            </ul>
+            <div x-show="expanded" x-transition class="mt-2">
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Built real-world applications including e-commerce and mental health platforms.</li>
+                <li>Collaborated on team projects simulating agile development environments.</li>
+                <li>Strengthened skills in frontend/backend integration, authentication, and data management.</li>
+              </ul>
+            </div>
+            <button @click="expanded = !expanded" class="mt-3 text-indigo-600 hover:underline font-medium">
+              <span x-text="expanded ? 'Read Less' : 'Read More'"></span>
+            </button>
+          </div>
+    
+          <!-- Ghana Tech Lab -->
+          <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-blue-600" x-data="{ expanded: false }">
+            <h2 class="text-lg font-semibold text-blue-600">Sep 2022 – Oct 2023</h2>
+            <h3 class="text-xl font-bold text-gray-800">Digital Skills Trainee (National Service)</h3>
+            <p class="text-gray-600 italic">Ghana Tech Lab, Accra</p>
+            <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+              <li>Trained in data analysis and digital productivity tools.</li>
+            </ul>
+            <div x-show="expanded" x-transition class="mt-2">
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Worked with MySQL, Excel, and Power BI for data handling and visualization.</li>
+                <li>Collected, analyzed, and interpreted data to support business decisions.</li>
+                <li>Collaborated on a startup-focused group project using real-world data analysis.</li>
+              </ul>
+            </div>
+            <button @click="expanded = !expanded" class="mt-3 text-blue-600 hover:underline font-medium">
+              <span x-text="expanded ? 'Read Less' : 'Read More'"></span>
+            </button>
+          </div>
+    
+          <!-- Centre for National Culture -->
+          <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-green-600" x-data="{ expanded: false }">
+            <h2 class="text-lg font-semibold text-green-600">May 2021 – Aug 2021</h2>
+            <h3 class="text-xl font-bold text-gray-800">Intern, Visual Arts Department</h3>
+            <p class="text-gray-600 italic">Centre for National Culture, Kumasi</p>
+            <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+              <li>Produced handmade textile works (batik, tie-dye, kente).</li>
+              <template x-if="expanded">
+                <div>
+                  <li>Led art training sessions and exhibitions using visual storytelling tools.</li>
+                  <li>Supported hybrid art education and digital workshops.</li>
+                </div>
+              </template>
+            </ul>
+            <button class="mt-3 text-green-600 hover:underline font-medium" @click="expanded = !expanded" x-text="expanded ? 'Read Less' : 'Read More'"></button>
+          </div>
+    
+          <!-- Alfies Design -->
+          <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-purple-600" x-data="{ expanded: false }">
+            <h2 class="text-lg font-semibold text-purple-600">Aug 2021 – Oct 2021</h2>
+            <h3 class="text-xl font-bold text-gray-800">Fashion Designer & Product Lead</h3>
+            <p class="text-gray-600 italic">Alfies Design, Accra</p>
+            <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+              <li>Designed custom fashion for export with creativity and precision.</li>
+              <template x-if="expanded">
+                <div>
+                  <li>Supervised production to meet high-quality standards.</li>
+                  <li>Managed logistics and expanded into global markets.</li>
+                  <li>Utilized project management and digital marketing to boost sales.</li>
+                </div>
+              </template>
+            </ul>
+            <button class="mt-3 text-purple-600 hover:underline font-medium" @click="expanded = !expanded" x-text="expanded ? 'Read Less' : 'Read More'"></button>
+          </div>
+    
+          <!-- Mobile Money Vendor -->
+          <div class="bg-white shadow-md rounded-lg p-6 border-l-4 border-yellow-500" x-data="{ expanded: false }">
+            <h2 class="text-lg font-semibold text-yellow-600">Dec 2017 – Aug 2018</h2>
+            <h3 class="text-xl font-bold text-gray-800">Digital Payment Agent</h3>
+            <p class="text-gray-600 italic">Accra, Ghana</p>
+            <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+              <li>Handled daily digital financial transactions efficiently.</li>
+              <template x-if="expanded">
+                <div>
+                  <li>Resolved real-time customer and technical issues.</li>
+                  <li>Ensured compliance with financial security protocols.</li>
+                  <li>Balanced accounts and created transaction reports accurately.</li>
+                </div>
+              </template>
+            </ul>
+            <button class="mt-3 text-yellow-600 hover:underline font-medium" @click="expanded = !expanded" x-text="expanded ? 'Read Less' : 'Read More'"></button>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+
+    <section id="portfolio" class="portfolio py-20 bg-[#100E17]">
+      <div class="portfolio-details">
+        <div class="section-heading text-center mb-12">
+          <h2 class="text-4xl font-bold text-white">Project Gallery</h2>
+          <p class="text-white mt-2">Explore some of my recent work</p>
+        </div>
+
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- First Row - Two Images Side by Side -->
-            <div class="item relative group overflow-hidden rounded-xl shadow-xl">
-              <img src="./images/Screenshot 2025-05-01 000254.png" alt="Mental Health Project" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
-              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <a href="https://aya-health.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">Mental Health</a>
+            <div
+              class="item relative group overflow-hidden rounded-xl shadow-xl"
+            >
+              <img
+                src="./images/Screenshot 2025-05-01 000254.png"
+                alt="Mental Health Project"
+                class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <a
+                  href="https://aya-health.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded"
+                  >Mental Health</a
+                >
               </div>
             </div>
-    
-            <div class="item relative group overflow-hidden rounded-xl shadow-xl">
-              <img src="./images/Screenshot 2025-04-30 235538.png" alt="E-commerce Project" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
-              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <a href="https://crownmekk.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">E-commerce</a>
+
+            <div
+              class="item relative group overflow-hidden rounded-xl shadow-xl"
+            >
+              <img
+                src="./images/Screenshot 2025-04-30 235538.png"
+                alt="E-commerce Project"
+                class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <a
+                  href="https://crownmekk.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded"
+                  >E-commerce</a
+                >
               </div>
             </div>
           </div>
-    
+
           <!-- Second Row - Single Centered Image -->
           <div class="mt-10 flex justify-center">
-            <div class="item relative group overflow-hidden rounded-xl shadow-xl w-full md:w-1/2">
-              <img src="./images/Screenshot 2025-02-27 102644.png" alt="Web Development" class="w-full h-auto transition-transform duration-300 group-hover:scale-105" />
-              <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <a href="#" class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded">Web Development</a>
+            <div
+              class="item relative group overflow-hidden rounded-xl shadow-xl w-full md:w-1/2"
+            >
+              <img
+                src="./images/Screenshot 2025-02-27 102644.png"
+                alt="Web Development"
+                class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <a
+                  href="#"
+                  class="text-white text-xl font-semibold bg-black bg-opacity-60 px-4 py-2 rounded"
+                  >Web Development</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
 
     <section id="contact" class="contact">
       <div class="section-heading">
